@@ -1,0 +1,25 @@
+ALGORITHM algorithm_name
+VAR
+    s:string
+    sc:integer
+    wc:integer
+    vc:integer
+BEGIN
+
+sc:=0;
+wc:=1;
+vc:=0;
+
+    FOR i FROM 0 TO s.length-1 STEP 1  DO
+        IF(s[i]=="") THEN 
+        wc:=wc+1;
+        sc:=sc+1;   
+        END_IF
+        IF (s[i]=="a" or s[i]=="A" or s[i]=="e" or s[i]=="E" or s[i]=="i" or s[i]=="I" or s[i]=="o" or s[i]=="O" or s[i]=="u" or s[i]=="U" or s[i]=="y" or s[i]=="Y") THEN
+        vc:=vc+1;
+        END_IF
+    END_FOR
+    Write("the number of spaces is"sc);
+    Write("the number of words is"wc);
+    Write("the number of vowels is"vc);
+END
