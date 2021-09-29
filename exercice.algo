@@ -11,7 +11,7 @@ wc:=1;
 vc:=0;
 
     FOR i FROM 0 TO s.length-1 STEP 1  DO
-        IF(s[i]=="") THEN 
+        IF(s[i]==" ") THEN 
         wc:=wc+1;
         sc:=sc+1;   
         END_IF
